@@ -8,7 +8,7 @@ var app = builder.Build();
 
 app.MapGet("/home", () =>
 {
-    var result = string.Format("{0}: {1}", "Hello from REST API({2}) ", DateTime.UtcNow.ToString(), "ver. 1.2");
+    var result = string.Format("{0}: {1}", "Hello from REST ", DateTime.UtcNow.ToString());
     return result;
 });
 
