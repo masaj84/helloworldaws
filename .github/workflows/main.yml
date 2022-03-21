@@ -1,5 +1,5 @@
 ---
-name: Build and Push .Net Core app to AWS ECR
+name: Build and Push .Net Core app to AWS ECR v.2
 on: 
   push:
     branches: [ main ]
