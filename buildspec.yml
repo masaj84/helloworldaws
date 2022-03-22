@@ -7,10 +7,10 @@ phases:
     runtime-versions:
       dotnet: latest
       
-  pre_build:
-    commands:
-      - echo Restore started on `date`
-      - dotnet restore helloworldaws.csproj
+  #pre_build:
+  #  commands:
+  #    - echo Restore started on `date`
+  #    - dotnet restore helloworldaws.csproj
       
   build:
     commands:
