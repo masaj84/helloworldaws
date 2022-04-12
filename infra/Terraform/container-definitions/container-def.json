@@ -1,0 +1,22 @@
+[
+    {
+      "name": "pink-slon",
+      "image": "448160365430.dkr.ecr.eu-central-1.amazonaws.com/testrepo:latest",
+      "cpu": 1,
+      "memory": 256,
+      "essential": true,
+      "networkMode": "awsvpc",
+      "portMappings": [
+        {
+          "containerPort": 80
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": { 
+          "awslogs-group" : "/ecs/test-container",
+          "awslogs-region": "eu-central-1"
+        }
+      }
+    }
+]
